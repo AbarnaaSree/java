@@ -4,18 +4,7 @@ public class dfs {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         while(N-- > 0){
-            int x=sc.nextInt();
-            for(int i=1;i<=9 && i<=x;i++ )
-            {
-                dfs(i,x);
-            }
-
-        }
-    }
-    public static void dfs(int num,int x)
-    {
-        if(num>x)
-            return;
+         
         System.out.print(num+" ");
         int last=num%10;
         if(last == 9){
